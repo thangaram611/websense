@@ -1,0 +1,51 @@
+.navbar-brand{
+    position: absolute;
+    left: 46%;
+    right: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+
+#sidebar-wrapper {
+    transition-duration: 0.2s;
+	z-index: 1;
+    position: fixed;
+    margin-top: 50px;
+    width: 0;
+    height: 100%;
+    overflow-y: hidden;
+    opacity: 0.9;
+}
+#content-wrapper {
+    transition-duration: 0.2s;
+    margin-top: 50px;
+	width: 100%;
+    position: absolute;
+    padding: 15px;
+    
+}
+#wrapper.menudisplayed #sidebar-wrapper {
+    transition-duration: 0.2s;
+	width: 200px;
+}
+#wrapper.menudisplayed #content-wrapper {
+    transition-duration: 0.2s;
+	padding-left: 220px;
+}
+
+.sidebar-nav {
+	list-style: none;
+}
+.sidebar-nav li{
+	text-indent: 20px;
+    line-height: 40px;
+}
+.sidebar-nav li a{
+	display: block;
+    text-decoration: none;
+    color: black;
+}
+.sidebar-nav li a:hover{
+	background: antiquewhite;
+}
